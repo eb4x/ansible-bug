@@ -1,0 +1,5 @@
+---
+
+- name: Test task for debian
+  command: echo "{{ example_var }}"
+

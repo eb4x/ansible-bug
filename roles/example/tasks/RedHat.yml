@@ -1,0 +1,5 @@
+---
+
+- name: Test task for redhat
+  command: echo "{{ example_var }}"
+
