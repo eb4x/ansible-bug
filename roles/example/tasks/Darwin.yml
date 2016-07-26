@@ -1,0 +1,5 @@
+---
+
+- name: Test task for osx
+  command: echo "{{ example_var }}"
+
