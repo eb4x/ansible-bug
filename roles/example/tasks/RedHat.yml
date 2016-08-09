@@ -1,5 +1,8 @@
 ---
 
-- name: Test task for redhat
+- name: step 4, redhat sub-task 1
+  command: echo "{{ example_var }}"
+
+- name: step 5, redhat sub-task 2
   command: echo "{{ example_var }}"
 

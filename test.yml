@@ -3,6 +3,14 @@
 - name: Test include_vars in roles
   hosts: localhost
 
+  pre_tasks:
+    - name: step 0, pre_task
+      command: echo "pre_task"
+
   roles:
     - example
+
+  tasks:
+    - name: step 7, first task after role
+      command: echo "task 1"
 

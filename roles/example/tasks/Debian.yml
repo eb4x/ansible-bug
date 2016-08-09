@@ -1,5 +1,8 @@
 ---
 
-- name: Test task for debian
+- name: step 4, debian sub-task 1
+  command: echo "{{ example_var }}"
+
+- name: step 5, debian sub-task 2
   command: echo "{{ example_var }}"
 

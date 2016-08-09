@@ -1,9 +1,17 @@
 ---
 
-- include_vars: "{{ item }}"
+- name: step 1, include_vars with_first_found
+  include_vars: "{{ item }}"
   with_first_found:
     - "{{ ansible_distribution }}.yml"
     - "{{ ansible_os_family }}.yml"
 
-- include: "{{ ansible_os_family }}.yml"
+- name: step 2, do a main task.
+  command: echo "main task 1"
+
+- name: step 3, include sub-task on ansible_os_family
+  include: "{{ ansible_os_family }}.yml"
+
+- name: step 6, do another main task.
+  command: echo "main task 2"
 

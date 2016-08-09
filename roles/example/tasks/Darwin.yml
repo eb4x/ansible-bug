@@ -1,5 +1,8 @@
 ---
 
-- name: Test task for osx
+- name: step 4, darwin sub-task 1
+  command: echo "{{ example_var }}"
+
+- name: step 5, darwin sub-task 2
   command: echo "{{ example_var }}"
 
