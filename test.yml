@@ -11,6 +11,12 @@
     - example
 
   tasks:
-    - name: step 7, first task after role
+    - name: step 7, task 1 after role
       command: echo "task 1"
+
+    - name: step 8, include sub-tasks
+      include: subtask.yml
+
+    - name: step 11, task 2 after role
+      command: echo "task 2"
 

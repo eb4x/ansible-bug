@@ -1,0 +1,8 @@
+---
+
+- name: step 9, sub-task 1
+  command: echo "Hello world 1!"
+
+- name: step 10, sub-task 2
+  command: echo "Hello world 2!"
+
